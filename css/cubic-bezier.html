@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS animation utilizing cubic-bezier</title>
+	<style type="text/css">
+			@-webkit-keyframes subKey {
+			  from {					
+			  	transform: rotate(-270deg);
+			  }
+			  to {			  
+			  	border-radius: 200px;
+			  	transform: rotate(0deg);
+			  	box-shadow: 0px 0px 30px 0px #666;
+			  }
+			}
+			@-moz-keyframes subKey {
+			 from {					
+			  	transform: rotate(-270deg);
+			  }
+			  to {			  
+			  	border-radius: 200px;
+			  	transform: rotate(0deg);
+			  	box-shadow: 0px 0px 30px 0px #666;
+			  }					  
+			}
+			@-ms-keyframes subKey {
+			  from {					
+			  	transform: rotate(-270deg);
+			  }
+			  to {			  
+			  	border-radius: 200px;
+			  	transform: rotate(0deg);
+			  	box-shadow: 0px 0px 30px 0px #666;
+			  }			
+			}
+			@-o-keyframes subKey {
+			  from {					
+			  	transform: rotate(-270deg);
+			  }
+			  to {			  
+			  	border-radius: 200px;
+			  	transform: rotate(0deg);
+			  	box-shadow: 0px 0px 30px 0px #666;
+			  }
+			}
+			@keyframes subKey {
+			  from {					
+			  	transform: rotate(-270deg);
+			  }
+			  to {			  
+			  	border-radius: 200px;
+			  	transform: rotate(0deg);
+			  	box-shadow: 0px 0px 30px 0px #666;
+			  }
+			}
+			
+			.container {
+				background-color: #C00;
+				width:200px;
+				height:200px;
+				box-shadow: none;
+				margin:25px;
+				-webkit-animation: subKey 2s  infinite cubic-bezier(0.435, 1, 0.000, 0) alternate;
+			    -moz-animation: subKey 2s infinite cubic-bezier(0.435, 1, 0.000, 0) alternate;
+			    -ms-animation: subKey 2s  infinite cubic-bezier(0.435, 1, 0.000, 0) alternate;
+			    -o-animation: subKey 2s  infinite cubic-bezier(0.435, 1, 0.000, 0) alternate;
+			    animation: subKey 2s  infinite cubic-bezier(0.435, 1, 0.000, 0) alternate;
+			}
+	</style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
