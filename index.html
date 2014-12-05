@@ -2,8 +2,111 @@
 <html>
 <head>
 	<title>Testing</title>
+	<style type="text/css">
+			@-webkit-keyframes subFade {
+			  0% {
+			  	background-color: #C00;
+			    top:0;
+			    left:0;
+			  }
+			  50% {
+			  	border-radius: 100px;
+			    background-color: #000;
+			    box-shadow: 0px 0px 30px 4px #C00;
+			  }
+			  100% {
+			    top:200px;
+			    left: 200px;
+			    background-color: #C00;
+			  }
+			}
+			@-moz-keyframes subFade {
+			  0% {
+			  	background-color: #C00;
+			    top:0;
+			    left:0;
+			  }
+			  50% {
+			  	border-radius: 100px;
+			    background-color: #000;
+			    box-shadow: 0px 0px 30px 4px #C00;
+			  }
+			  100% {
+			    top:200px;
+			    left: 200px;
+			    background-color: #C00;
+			  }
+			}
+			@-ms-keyframes subFade {
+			  0% {
+			  	background-color: #C00;
+			    top:0;
+			    left:0;
+			  }
+			  50% {
+			  	border-radius: 100px;
+			    background-color: #000;
+			    box-shadow: 0px 0px 30px 4px #C00;
+			  }
+			  100% {
+			    top:200px;
+			    left: 200px;
+			    background-color: #C00;
+			  }
+			}
+			@-o-keyframes subFade {
+			  0% {
+			  	background-color: #C00;
+			    top:0;
+			    left:0;
+			  }
+			  50% {
+			  	border-radius: 100px;
+			    background-color: #000;
+			    box-shadow: 0px 0px 30px 4px #C00;
+			  }
+			  100% {
+			    top:200px;
+			    left: 200px;
+			    background-color: #C00;
+			  }
+			}
+			@keyframes subFade {
+			  0% {
+			  	background-color: #C00;
+			    top:0;
+			    left:0;
+			  }
+			  50% {
+			  	border-radius: 100px;
+			    background-color: #000;
+			    box-shadow: 0px 0px 30px 4px #C00;
+			  }
+			  100% {
+			    top:200px;
+			    left: 200px;
+			    background-color: #C00;
+			  }
+			}
+			
+			.container {
+				background-color: #C00;
+				color: #FFF;
+				width:100px;
+				height:100px;
+				padding: 10px;
+				font-size: 20px;
+				position:absolute;
+			    box-shadow: none;
+				-webkit-animation: subFade 4s 0s infinite linear alternate;
+			    -moz-animation: subFade 4s 0s infinite linear alternate;
+			    -ms-animation: subFade 4s 0s infinite linear alternate;
+			    -o-animation: subFade 4s 0s infinite linear alternate;
+			    animation: subFade 4s 0s infinite linear alternate;
+			}
+	</style>
 </head>
 <body>
-Test Github.io pages
+<div class="container"></div>
 </body>
 </html>
